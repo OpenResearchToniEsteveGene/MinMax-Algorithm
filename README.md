@@ -83,10 +83,10 @@ The search depth depends on the selected difficulty:
 
 ## Mathematical Description of Minimax
 
-Let $$s$$ be a board position and let ( \mathcal{A}(s) ) be the set of legal actions from ( s ).
-Let ( T(s,a) ) denote the successor state obtained after applying action ( a ).
+Let $$s$$ be a board position and let $$\mathcal{A}(s)$$ be the set of legal actions from $$s$$.
+Let $$T(s,a)$$ denote the successor state obtained after applying action $$a$$.
 
-The Minimax value ( V(s) ) is defined recursively as:
+The Minimax value $$V(s)$$ is defined recursively as:
 
 \[
 V(s)=
@@ -98,11 +98,11 @@ V(s)=
 
 At terminal or cutoff states, the algorithm does not continue expanding the tree. Instead, it assigns a score through a heuristic evaluation function:
 
-[
+\[
 V(s) = h(s)
-]
+\]
 
-where ( h(s) ) estimates how favorable the position is for the computer.
+where $$h(s)$$ estimates how favorable the position is for the computer.
 
 ### Interpretation
 
@@ -111,9 +111,9 @@ where ( h(s) ) estimates how favorable the position is for the computer.
 
 The chosen move is the action:
 
-[
+\[
 a^* = \arg\max_{a \in \mathcal{A}(s)} V(T(s,a))
-]
+\]
 
 for the computer’s turn.
 
@@ -140,9 +140,9 @@ The global board score is the sum over:
 
 So the board evaluation can be written conceptually as:
 
-[
+\[
 h(s)=\sum_{w \in \mathcal{W}(s)} h_w(w)
-]
+\]
 
 where:
 
