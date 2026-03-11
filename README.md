@@ -1,4 +1,3 @@
-````markdown
 # Connect Four with Minimax — README
 
 ## Overview
@@ -17,7 +16,7 @@ The implementation includes:
 
 ## Project Structure
 
-```text
+```
 .
 ├── main.c
 ├── Minimax.c
