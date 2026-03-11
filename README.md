@@ -83,18 +83,18 @@ The search depth depends on the selected difficulty:
 
 ## Mathematical Description of Minimax
 
-Let ( s ) be a board position and let ( \mathcal{A}(s) ) be the set of legal actions from ( s ).
+Let $$s$$ be a board position and let ( \mathcal{A}(s) ) be the set of legal actions from ( s ).
 Let ( T(s,a) ) denote the successor state obtained after applying action ( a ).
 
 The Minimax value ( V(s) ) is defined recursively as:
 
-[
+\[
 V(s)=
 \begin{cases}
 \max\limits_{a \in \mathcal{A}(s)} V(T(s,a)), & \text{if it is the computer's turn} \\
 \min\limits_{a \in \mathcal{A}(s)} V(T(s,a)), & \text{if it is the player's turn}
 \end{cases}
-]
+\]
 
 At terminal or cutoff states, the algorithm does not continue expanding the tree. Instead, it assigns a score through a heuristic evaluation function:
 
